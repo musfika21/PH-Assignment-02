@@ -1,0 +1,89 @@
+.quicksand-font {
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Shared Styles */
+.display-flex{
+  display: flex;
+}
+/* Header Style Start */
+/* Nav Style Start */
+.navbar{
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1400px;
+  margin: 20px auto;
+}
+.logo{
+  width: 60px;
+  margin-right: 15px;
+}
+.nav-logo{
+  align-items: center;
+}
+.nav-title{
+  color: rgb(17, 17, 17);
+font-size: 32px;
+font-weight: 700;
+line-height: 30px;
+text-align: left;
+}
+.nav-list{
+  list-style: none;
+}
+.nav-list li{
+  margin-left: 30px;
+}
+#list-1{
+  color: rgb(254, 163, 1);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+}
+#list-2{
+  color: rgb(1, 172, 253);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+}
+#list-3{
+  color: rgb(5, 212, 223);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+}
+#list-4{
+  color: rgb(93, 88, 239);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: left;
+}
+.nav-btn{
+  border-radius: 12px;
+  background: rgb(254, 163, 1);
+  padding: 7px 47px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  border: none;
+  cursor: pointer;
+}
+.nav-btn:hover{
+  opacity: 0.3;
+  color: rgb(254, 163, 1);
+  padding: 8px 49px;
+}
+/* Nav Style End */
+/* Header Style End */
