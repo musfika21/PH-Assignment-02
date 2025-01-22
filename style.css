@@ -27,7 +27,7 @@
   font-size: 1.5rem;
   font-weight: 700;
   line-height: 30.65px;
-  text-align: center;
+  /* text-align: center; */
 }
 .para{
   color: rgb(128, 128, 128);
@@ -35,7 +35,7 @@
   font-size: 1rem;
   font-weight: 500;
   line-height: 28.3px;
-  text-align: center;
+  /* text-align: center; */
 }
 /* Header Style Start */
 /* Nav Style Start */
@@ -182,22 +182,24 @@ text-align: left;
   background-position: center;
   margin-top: 60px;
   padding-bottom: 80px;
+  max-width: 1280px;
+  margin: auto;
+  padding: 20px;
 }
 .curriculum h3{
   text-align: center;
   margin-bottom: 80px;
+  
 }
 .cards{
   display: flex;
   justify-content: space-between;
-  margin-left: 150px;
-  margin-right: 150px;
-  
+  gap: 20px;
 }
 .card{
   position: relative;
-  width: 22.5rem;
-  height: 29.75rem;
+  /* width: 22.5rem;
+  height: 29.75rem; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -244,6 +246,20 @@ text-align: left;
 #f3{
   color: rgb(135, 0, 255);
 }
+.icon-div{
+  text-align: center;
+  margin-top: 80px;
+}
+.icon{
+  background-color: rgb(254, 163, 1);
+  border-radius: 50%;
+  padding: 10px;
+  border: none;
+  height: 50px;
+  width: 50px;
+  color: #fff;
+  font-size: 20px;
+}
 /* Curriculum Style End */
 
 /* Stories Style Start */
@@ -251,19 +267,102 @@ text-align: left;
   text-align: center;
   margin-bottom: 80px;
 }
+.stories{
+  background-image: url('assets/bg.png'),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+  padding: 40px 20px;
+}
+.story-card{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  justify-content: center;
+  align-items: start;
+  gap: 17px;
+  margin: auto;
+  max-width: 1280px;
+}
 .story{
   display: flex;
-  /* justify-content: center; */
+  justify-content: center;
   align-items: center;
   flex-direction: column;
+  border-radius: 10px;
+  background-color: #fff;
+  height: 100%;
+}
+#story-2 p,
+#story-3 p,
+#story-4 p,
+#story-5
+p{
+  color: rgb(0, 0, 0);
+  font-size: 15.34px;
+  font-weight: 700;
+  line-height: 28.76px;
+  letter-spacing: 0%;
+  text-align: left;
+  /* background-color: #fff; */
 }
 #story-1{
- width: 540px;
- height: 630px;
- background-color: aquamarine;
-}
-#btn-1{
+  grid-row: span 2;
+  grid-column: span 2;
+  background-color: #fff;
   
+}
+#story-1 div{
+  padding: 40px;
+}
+#story-1 img,
+#story-2 img,
+#story-3 img,
+#story-4 img,
+#story-5 img
+{
+  border-radius: 16px 16px 0 0;
+  width: 100%;
+}
+#story-1 h4{
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+#story-1 button{
+  border-radius: 47.93px;
+  padding: 15px 20px;
+  background: rgb(60, 216, 232);
+  color: rgb(255, 255, 255);
+  font-family: Raleway;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28.76px;
+  text-transform: capitalize;
+  border: none;
+  margin-top: -30px;
+}
+#story-2 div,
+#story-3 div,
+#story-4 div,
+#story-5 div{
+  padding: 30px;
+  /* background-color: #fff; */
+}
+.story-btn{
+  border-radius: 47.93px;
+padding: 12px 16px;
+background: rgb(149, 178, 38);
+color: rgb(255, 255, 255);
+font-family: Raleway;
+font-size: 12px;
+font-weight: 500;
+text-transform: capitalize;
+border: none;
+margin-top: -20px;
+
+}
+#story-3 button{
+  background-color: rgb(93, 88, 240);
+}
+.last{
+  text-align: center;
+  margin-top: 50px;
 }
 /* Stories Style End */
 /* Main Style End */
@@ -359,14 +458,14 @@ margin-bottom: 30px;
   .banner-img{
     height: 100%;
   }
-  .banner-content{
-    /* align-items: center; */
+  .banner-content h1,
+  .banner-para,
+  .button
+  {
     text-align: center;
   }
-  #orange{
-    text-align: center;
-  }
-  /* Banner Responsive */
+  
+  /* Curriculum Responsive */
   .cards{
     flex-direction: column;
     gap: 20px;
@@ -378,12 +477,38 @@ margin-bottom: 30px;
     /* height: 100%; */
 
   }
+  .icon-div{
+    display: none;
+  }
+
+  /* stories */
+  #story-1{
+    display: none;
+  }
+  .story-card{
+    grid-template-columns: repeat(2,1fr);
+    
+  }
+  #story-2 p,
+  #story-3 p,
+#story-4 p,
+#story-5
+p{
+  font-size: 12px;
+}
   /* footer responsive */
+  .footer{
+    padding: 0;
+  }
+  #col-2{
+    justify-content: start;
+  }
   .foot-container{
     grid-template-columns: repeat(1,1fr);
     justify-content: start;
     align-items: start;
-    padding: 0;
+    padding: 50px 20px;
+    
   }
 }
 
